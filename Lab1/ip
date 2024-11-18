@@ -1,0 +1,9 @@
+#!/bin/bash
+# Check if the option -v is provided
+if [[ "$1" == "-v" ]]; then
+    #grab ip, subnet and broadcast addresses
+    ip addr show | grep -E 'inet|broadcast' | awk '{print "IP Address: " $2 " Subnet Mask: " $4 " Broadcast Address: " $6}'
+else
+    #grab only the ip addresses	
+    ip addr show | grep -oP 'inet \K[\d.]+'
+fi
