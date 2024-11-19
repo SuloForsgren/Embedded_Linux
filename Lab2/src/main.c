@@ -24,6 +24,10 @@ int main(int argc, char *argv[])
 			{
 				printf("Valid integer found!\n");
 			}
+			else 
+			{
+				printf("An error occured\n");
+			}
 		}
 	}	
 	generate_numbers(min, max, uniqc);
