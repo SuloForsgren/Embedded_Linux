@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	{
 		for (int i = 1; i < argc; i++)
 		{
-			if (isdigit(argv[i])) 
+			if (isdigit(*argv[i])) 
 			{
 				printf("Valid integer found!\n");
 			}
