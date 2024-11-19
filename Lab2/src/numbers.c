@@ -1,5 +1,6 @@
 #include "../include/numbers.h"
 
+//Check for errors, allocate memory dynamically and generate numbers and free the allocated memory
 void generate_numbers(int min, int max, int uniqc) 
 {
 	srand(time(NULL));
@@ -10,6 +11,11 @@ void generate_numbers(int min, int max, int uniqc)
 	if (numbers == NULL) 
 	{
 		printf("Memory allocation failed\n");
+		return;
+	}
+	else if (uniqc > range) 
+	{
+		printf("Invalid range!");
 		return;
 	}
 	
@@ -39,7 +45,7 @@ void generate_numbers(int min, int max, int uniqc)
 	free(numbers);
 }
 
-
+//Ask the arguments (range and unique number count) and validate inputs
 int ask_arguments(int *min, int *max, int *uniqc) 
 {
 	printf("Enter start of range: \n");
@@ -63,10 +69,5 @@ int ask_arguments(int *min, int *max, int *uniqc)
 		return 1;
 	}
 
-	int range = *max - *min + 1;
-	if (*uniqc > range) 
-	{
-		return 1;
-	}
 	return 0;
 }
