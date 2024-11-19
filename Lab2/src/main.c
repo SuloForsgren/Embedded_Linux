@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		{
 			if (isdigit(*argv[i])) 
 			{
-				printf("Valid integer found!\n");
+				printf("Valid integer found: %d\n", *argv[i]);
 			}
 			else 
 			{
