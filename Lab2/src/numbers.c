@@ -15,7 +15,7 @@ void generate_numbers(int min, int max, int uniqc)
 	}
 	else if (uniqc > range) 
 	{
-		printf("Invalid range!");
+		printf("Invalid range!\n");
 		return;
 	}
 	
