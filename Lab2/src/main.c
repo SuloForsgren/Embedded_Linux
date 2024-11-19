@@ -2,29 +2,26 @@
 #include <stdlib.h>
 #include "../include/numbers.h"
 
+#define STRTOL_BASE 10
+
 int main(int argc, char *argv[]) 
 {
-	if (argc < 2) 
-	{
-		printf("No arguments given.. Exiting.....\n");
-		return 1;
-	}
-	int count;
+	char *endptr;
+	long val;
 	
-		
-	for (count = 1; count < argc; count++) 
-	{
-		char *endptr;
-		int value = strtol(argv[count], &endptr, 10);
+	int min, max, uniqc;
 
-		if (*endptr == '\0') 
+	if (argc < 4)
+	{
+		while (ask_arguments(&min, &max, &uniqc) != 0) 
 		{
-			printf("Success: %s (converted to %ld)\n", argv[count], value);
-		}
-		else 
-		{
-			printf("Encountered an error: %s\n", argv[count]);
-		}
+			printf("Invalid input or range detected.. Please try again with valid integers and range..\n");
+		}	
 	}
+	else
+	{
+   				
+	}	
+	generate_numbers(min, max, uniqc);
 	return 0;
 }
