@@ -1,0 +1,5 @@
+/home/sulo/dev/programming/iot/School/Embedded_Linux/Lab5/Pico_Template/bin/_deps/picotool/picotool
+/home/sulo/dev/programming/iot/School/Embedded_Linux/Lab5/Pico_Template/bin/_deps/picotool/picotoolTargets.cmake
+/home/sulo/dev/programming/iot/School/Embedded_Linux/Lab5/Pico_Template/bin/_deps/picotool/picotoolTargets-release.cmake
+/home/sulo/dev/programming/iot/School/Embedded_Linux/Lab5/Pico_Template/bin/_deps/picotool/picotoolConfig.cmake
+/home/sulo/dev/programming/iot/School/Embedded_Linux/Lab5/Pico_Template/bin/_deps/picotool/picotoolConfigVersion.cmake
